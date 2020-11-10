@@ -6,6 +6,7 @@ import Resume from './pages/Resume'
 import Projects from './pages/Projects'
 import Sidebar from './components/Sidebar'
 import Navbar from './components/Navbar'
+import { AnimatePresence } from 'framer-motion'
 
 const Portfolio = () => {
   return (
@@ -17,12 +18,14 @@ const Portfolio = () => {
           </div>
           <div className='col-lg-9 portfolio__main-content'>
             <Navbar />
-            <Switch>
-              <Route exact path='/' component={About} />
-              <Route exact path='/resume' component={Resume} />
-              <Route exact path='/projects' component={Projects} />
-              <Redirect to='/' />
-            </Switch>
+            <AnimatePresence exitBeforeEnter>
+              <Switch>
+                <Route exact path='/' component={About} />
+                <Route exact path='/resume' component={Resume} />
+                <Route exact path='/projects' component={Projects} />
+                <Redirect to='/' />
+              </Switch>
+            </AnimatePresence>
           </div>
         </div>
       </div>

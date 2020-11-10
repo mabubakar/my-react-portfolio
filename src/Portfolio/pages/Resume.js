@@ -57,7 +57,7 @@ const Resume = () => {
           <h5 className='reume-language__heading'>Language and Framework</h5>
           <div className='resume-language__body mt-3'>
             {languages.map(language => (
-              <Bar value={language} />
+              <Bar value={language} key={Math.random()} />
             ))}
           </div>
         </div>
@@ -65,7 +65,7 @@ const Resume = () => {
           <h5 className='reume-language__heading'>Tools and Softwares</h5>
           <div className='resume-language__body mt-3'>
             {tools.map(tool => (
-              <Bar value={tool} />
+              <Bar value={tool} key={Math.random()} />
             ))}
           </div>
         </div>
