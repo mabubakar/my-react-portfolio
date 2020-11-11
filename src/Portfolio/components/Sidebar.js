@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
-import mightyCoder from '../assets/mightycoder.svg'
+import myPic from '../assets/mypic.jpg'
+// import mightyCoder from '../assets/mightycoder.svg'
 import resume from '../assets/resume.pdf'
 import {
   FaFacebookSquare,
@@ -41,7 +41,7 @@ const Sidebar = () => {
       initial='hidden'
       animate='visible'
     >
-      <img src={mightyCoder} alt='avatar' className='sidebar__avatar' />
+      <img src={myPic} alt='avatar' className='sidebar__avatar' />
       <div className='sidebar__name'>
         Muhammad <span>Abubakar</span>
       </div>
