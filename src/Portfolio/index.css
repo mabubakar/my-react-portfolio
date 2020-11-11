@@ -16,11 +16,11 @@ body {
 }
 
 .portfolio__container {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 .portfolio__row {
-  min-height: 86vh;
+  min-height: 72vh;
 }
 
 a {
@@ -44,7 +44,7 @@ a:hover {
   background: #fff;
   height: 100%;
   border-radius: 20px;
-  padding: 25px 15px;
+  padding: 20px 15px;
   text-align: center;
   box-shadow: 0 0 10px black;
 }
@@ -118,12 +118,6 @@ a:hover {
   color: #000;
 }
 
-@media (max-width: 991px) {
-  .portfolio__main-content {
-    margin: 30px 0;
-  }
-}
-
 /* Navbar */
 .navbar__items {
   display: flex;
@@ -152,17 +146,20 @@ a:hover {
 
 /* About Section */
 .about {
-  padding: 20px;
-  margin: -32px;
+  padding: 0 10px;
+  margin: 0 -2px;
+  height: 72vh;
+  overflow-y: auto;
 }
 .about__intro {
   font-size: 1.1rem;
-  padding: 20px;
+  padding: 10px 20px;
   margin: 10px 0;
 }
 .about__container {
   background-color: #dbdddf;
-  padding: 30px 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
 }
 
 .about__heading {
@@ -251,7 +248,7 @@ a:hover {
 /* projects */
 .projects {
   height: 72vh;
-  padding-top: 30px;
+  padding-top: 15px;
   overflow-y: auto;
 }
 
@@ -297,4 +294,10 @@ a:hover {
   margin: 0 5px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .portfolio__main-content {
+    margin-top: 30px;
+  }
 }
