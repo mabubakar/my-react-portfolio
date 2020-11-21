@@ -53,16 +53,28 @@ const Sidebar = () => {
         </div>
       </a>
       <figure className='sidebar__social-icons mx-2'>
-        <a href='https://www.facebook.com/a4abubakar' target='_blank'>
+        <a
+          href='https://www.facebook.com/a4abubakar'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <FaFacebookSquare className='sidebar__icon mx-2 sidebar__facebook' />
         </a>
-        <a href='https://www.linkedin.com/in/a4abubakar' target='_blank'>
+        <a
+          href='https://www.linkedin.com/in/a4abubakar'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <FaLinkedin className='sidebar__icon sidebar__linkdin' />
         </a>
       </figure>
       <div className='sidebar__contact'>
         <div className='sidebar__item'>
-          <a href='https://github.com/mabubakar' target='_blank'>
+          <a
+            href='https://github.com/mabubakar'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <FaGithubSquare className='sidebar__icon mx-1 sidebar__github' />
             Github
           </a>
