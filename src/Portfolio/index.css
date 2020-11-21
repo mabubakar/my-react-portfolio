@@ -58,7 +58,8 @@ a:hover {
 .sidebar__icon {
   width: 25px;
   height: 25px;
-  /* color: #00f260; */
+
+  /* background: linear-gradient(to right, #00f260, #2da852); */
 }
 
 .sidebar__name {

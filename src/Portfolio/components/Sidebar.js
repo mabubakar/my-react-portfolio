@@ -46,26 +46,26 @@ const Sidebar = () => {
         Muhammad <span>Abubakar</span>
       </div>
       <div className='sidebar__item sidebar__title'>Frontend Developer</div>
-      <Link to={resume} download='resume.pdf'>
+      <a href={resume} download='resume.pdf'>
         <div className='sidebar__item sidebar__resume'>
           <FaGraduationCap className='sidebar__icon mr-2' />
           Download Resume
         </div>
-      </Link>
+      </a>
       <figure className='sidebar__social-icons mx-2'>
-        <Link to='https://www.facebook.com/A4Abubakar'>
+        <a href='https://www.facebook.com/a4abubakar' target='_blank'>
           <FaFacebookSquare className='sidebar__icon mx-2 sidebar__facebook' />
-        </Link>
-        <Link to='https://www.linkedin.com/in/a4abubakar'>
+        </a>
+        <a href='https://www.linkedin.com/in/a4abubakar' target='_blank'>
           <FaLinkedin className='sidebar__icon sidebar__linkdin' />
-        </Link>
+        </a>
       </figure>
       <div className='sidebar__contact'>
         <div className='sidebar__item'>
-          <Link to=''>
+          <a href='https://github.com/mabubakar' target='_blank'>
             <FaGithubSquare className='sidebar__icon mx-1 sidebar__github' />
             Github
-          </Link>
+          </a>
         </div>
         <div className='sidebar__location'>
           <FaMapMarkerAlt className='sidebar__icon mx-1' />
